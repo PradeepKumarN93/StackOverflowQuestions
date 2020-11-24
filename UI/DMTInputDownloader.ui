@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1057</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="baseSize">
+   <size>
+    <width>0</width>
+    <height>7</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget{
+	background: #252525;
+	color: #FFFFFF;
+	font-family: Calibri;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+QPushButton{
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #89c403);
+	background-color:#77a809;
+	border-radius:5px;
+	border:none;
+	color:#FFFFFF;
+	font-family:Calibri;
+	font-size:14px;
+	padding: 6px 10px;
+	font-weight: bold;
+	text-decoration:none;
+}
+
+QPushButton:hover:active{
+	background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #89c403, stop: 1.0 #77a809);
+	background-color:#89c403;
+}
+
+QPushButton:active{
+	position:relative;
+	top:1px;
+}
+
+ QPushButton:disabled{
+	background:linear-gradient(to bottom, #cbcbcb 5%, #bfbfbf 100%);
+	background-color:#cbcbcb;
+}
+
+QLineEdit {
+	color: #000000;
+	border: none;
+	border-radius: 3px;
+	font: 10.5pt &quot;Calibri&quot;;
+	background-color: #FFFFFF;
+	padding-left: 3px;
+	padding-right: 3px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+
+QScrollBar:vertical {              
+  border: none;
+  background: #F0F0F0;
+  width: 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+QScrollBar:horizontal {              
+  border: none;
+  background: #F0F0F0;
+  width: 10px;
+  margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+ min-height: 0px;
+ width: 10px;
+}
+
+QScrollBar::handle:horizontal {
+ background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+ min-height: 0px;
+ width: 10px;
+}
+
+QScrollBar::add-line:vertical {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+  height: 0px;
+  width: 10px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+  border-radius: 5px;
+}
+
+QScrollBar::add-line:horizontal {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+  height: 0px;
+  width: 10px;
+  subcontrol-position: bottom;
+  subcontrol-origin: margin;
+  border-radius: 5px;
+}
+
+QScrollBar::sub-line:vertical {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+  height: 0 px;
+  width: 10px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+  border-radius: 5px;
+}
+
+QScrollBar::sub-line:horizontal {
+  background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 #77a809, stop: 1.0 #007dc1);
+  height: 0 px;
+  width: 10px;
+  subcontrol-position: top;
+  subcontrol-origin: margin;
+  border-radius: 5px;
+}
+
+QScrollBar::sub-page:vertical {
+  background: none;
+}
+
+QScrollBar::sub-page:horizontal {
+  background: none;
+}
+
+QScrollBar::add-page:vertical {
+  background: none;
+}
+
+QScrollBar::add-page:horizontal {
+  background: none;
+}
+
+QListWidget:item {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+QTableView {
+selection-background-color: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5, stop: 0 #007dc1, stop: 1 #0061a7);
+color: #FFFFFF;
+border: 1px solid white;
+}
+
+QTableView QTableCornerButton::section {
+background: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5, stop: 0 #77a809, stop: 1 #89c403);
+}
+
+QHeaderView {
+qproperty-defaultAlignment: AlignLeft;
+}
+
+QHeaderView:section {
+background: qlineargradient(x1: 0, y1: 0, x2: 0.5, y2: 0.5, stop: 0 #77a809, stop: 1 #89c403);
+border: 1px white;
+padding-left: 5px;
+padding-top: 5px;
+color: #000000;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>661</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="5,83,2,5,5">
+     <property name="spacing">
+      <number>10</number>
+     </property>
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
+     <property name="topMargin">
+      <number>0</number>
+     </property>
+     <property name="bottomMargin">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>DMT Title</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="search">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+         <horstretch>0</horstretch>
+         <verstretch>5</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>7</height>
+        </size>
+       </property>
+       <property name="placeholderText">
+        <string>Search...</string>
+       </property>
+       <property name="clearButtonEnabled">
+        <bool>true</bool>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="view">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>View</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="add">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>75</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Add</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QTableWidget" name="tableWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>1021</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollMode">
+     <enum>QAbstractItemView::ScrollPerPixel</enum>
+    </property>
+    <property name="sortingEnabled">
+     <bool>true</bool>
+    </property>
+    <property name="rowCount">
+     <number>10</number>
+    </property>
+    <property name="columnCount">
+     <number>5</number>
+    </property>
+    <attribute name="horizontalHeaderMinimumSectionSize">
+     <number>200</number>
+    </attribute>
+    <attribute name="horizontalHeaderDefaultSectionSize">
+     <number>200</number>
+    </attribute>
+    <attribute name="verticalHeaderVisible">
+     <bool>true</bool>
+    </attribute>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <row/>
+    <column>
+     <property name="text">
+      <string>Filename</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Source Path</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Destination Path</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Frequency</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Time of Download</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
